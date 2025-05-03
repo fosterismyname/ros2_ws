@@ -1,0 +1,1 @@
+xacro;robot_state_publisher;gazebo_ros;launch;launch_ros;python3;rclpy;geometry_msgs;slam_toolbox;nav_msgs;sensor_msgs
