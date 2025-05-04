@@ -34,17 +34,4 @@ def generate_launch_description():
             output='screen'
         ),
 
-        # Запускаем SLAM Toolbox
-        Node(
-            package='slam_toolbox',
-            executable='sync_slam_toolbox_node',
-            name='slam_toolbox',
-            output='screen',
-            parameters=[
-                {'use_sim_time': True}
-            ],
-            remappings=[
-                ('/scan', '/scan')  # Если твой лидар публикует в другой топик, поменяй здесь
-            ]
-        )
     ])
