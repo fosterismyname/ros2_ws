@@ -24,6 +24,7 @@
 /home/elisey/ros2_ws/install/simple_robot_description/lib/simple_robot_description/l_shape_driver.py
 /home/elisey/ros2_ws/install/simple_robot_description/share/simple_robot_description/worlds/room_with_obstacles.world
 /home/elisey/ros2_ws/install/simple_robot_description/lib/simple_robot_description/tf_broadcaster.py
+/home/elisey/ros2_ws/install/simple_robot_description/lib/simple_robot_description/odom_tf_broadcaster.py
 /home/elisey/ros2_ws/install/simple_robot_description/share/ament_index/resource_index/package_run_dependencies/simple_robot_description
 /home/elisey/ros2_ws/install/simple_robot_description/share/ament_index/resource_index/parent_prefix_path/simple_robot_description
 /home/elisey/ros2_ws/install/simple_robot_description/share/simple_robot_description/environment/ament_prefix_path.sh

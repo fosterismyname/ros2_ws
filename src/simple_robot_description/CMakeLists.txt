@@ -30,6 +30,11 @@ install(
     scripts/tf_broadcaster.py
   DESTINATION lib/${PROJECT_NAME}
 )
+install(
+  PROGRAMS
+    scripts/odom_tf_broadcaster.py
+  DESTINATION lib/${PROJECT_NAME}
+)
 
 ament_package()
 

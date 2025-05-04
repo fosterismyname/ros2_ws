@@ -10,17 +10,25 @@ def generate_launch_description():
             output='screen',
             parameters=[{
                 'frame_id': 'base_link',
-                'subscribe_depth': False,
                 'subscribe_rgb': True,
-                'subscribe_scan': False,
-                'subscribe_stereo': False,
+                'subscribe_depth': False,
                 'subscribe_rgbd': False,
-                'approx_sync': True
+                'approx_sync': True,
+                'subscribe_odom_info': True,  # Добавить подписку на одометрию
             }],
             remappings=[
-                ('rgb/image', '/camera_sensor/image_raw'),
-                ('rgb/camera_info', '/camera_sensor/camera_info'),
-                ('odom', '/odom')
+                ('/camera/image_raw', '/camera_sensor/image_raw'),
+                ('/camera/camera_info', '/camera_sensor/camera_info'),
+                ('/odom', '/odom')
             ]
+        ),
+        Node(
+            package='rtabmap_ros',
+            executable='rtabmapviz',
+            name='rtabmapviz',
+            output='screen',
+            parameters=[{
+                'frame_id': 'base_link'
+            }]
         )
     ])
