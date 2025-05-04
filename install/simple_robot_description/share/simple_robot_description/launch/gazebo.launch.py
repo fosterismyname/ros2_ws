@@ -34,4 +34,11 @@ def generate_launch_description():
             output='screen'
         ),
 
+        # Публикуем трансформацию odom -> base_link
+        Node(
+            package='simple_robot_description',
+            executable='tf_broadcaster.py',
+            name='odom_tf_broadcaster',
+            output='screen'
+        ),
     ])

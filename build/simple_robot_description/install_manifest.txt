@@ -1,5 +1,6 @@
 /home/elisey/ros2_ws/install/simple_robot_description/share/simple_robot_description/urdf/simple_robot.xacro
 /home/elisey/ros2_ws/install/simple_robot_description/share/simple_robot_description/launch/l_shape_drive.launch.py
+/home/elisey/ros2_ws/install/simple_robot_description/share/simple_robot_description/launch/rtab_map_mono.launch.py
 /home/elisey/ros2_ws/install/simple_robot_description/share/simple_robot_description/launch/gazebo.launch.py
 /home/elisey/ros2_ws/install/simple_robot_description/share/simple_robot_description/launch/install/.colcon_install_layout
 /home/elisey/ros2_ws/install/simple_robot_description/share/simple_robot_description/launch/install/setup.ps1
@@ -22,6 +23,7 @@
 /home/elisey/ros2_ws/install/simple_robot_description/share/simple_robot_description/launch/log/build_2025-04-27_22-30-42/events.log
 /home/elisey/ros2_ws/install/simple_robot_description/lib/simple_robot_description/l_shape_driver.py
 /home/elisey/ros2_ws/install/simple_robot_description/share/simple_robot_description/worlds/room_with_obstacles.world
+/home/elisey/ros2_ws/install/simple_robot_description/lib/simple_robot_description/tf_broadcaster.py
 /home/elisey/ros2_ws/install/simple_robot_description/share/ament_index/resource_index/package_run_dependencies/simple_robot_description
 /home/elisey/ros2_ws/install/simple_robot_description/share/ament_index/resource_index/parent_prefix_path/simple_robot_description
 /home/elisey/ros2_ws/install/simple_robot_description/share/simple_robot_description/environment/ament_prefix_path.sh

@@ -25,6 +25,11 @@ install(
   DIRECTORY worlds
   DESTINATION share/${PROJECT_NAME}
 )
+install(
+  PROGRAMS
+    scripts/tf_broadcaster.py
+  DESTINATION lib/${PROJECT_NAME}
+)
 
 ament_package()
 
