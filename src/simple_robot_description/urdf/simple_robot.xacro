@@ -108,29 +108,33 @@
     <origin xyz="0.2 0 0.1" rpy="0 0 0"/>
   </joint>
   <gazebo reference="camera_link">
-    <sensor type="camera" name="camera_sensor">
-      <update_rate>30.0</update_rate>
-      <camera>
-        <horizontal_fov>1.3962634</horizontal_fov>
-        <image>
-          <width>640</width>
-          <height>480</height>
-          <format>R8G8B8</format>
-        </image>
-        <clip>
-          <near>0.1</near>
-          <far>100.0</far>
-        </clip>
-      </camera>
-      <plugin name="gazebo_ros_camera" filename="libgazebo_ros_camera.so">
-        <robotNamespace>/</robotNamespace>
-        <cameraName>camera</cameraName>
-        <imageTopicName>camera/image_raw</imageTopicName>
-        <cameraInfoTopicName>camera/camera_info</cameraInfoTopicName>
-        <frameName>camera_link</frameName>
-      </plugin>
-    </sensor>
-  </gazebo>
+  <sensor type="camera" name="camera_sensor">
+  
+    <always_on>true</always_on>
+    <visualize>true</visualize>
+    <update_rate>30.0</update_rate>
+    <camera>
+      <horizontal_fov>1.3962634</horizontal_fov>
+      <image>
+        <width>640</width>
+        <height>480</height>
+        <format>R8G8B8</format>
+      </image>
+      <clip>
+        <near>0.1</near>
+        <far>100.0</far>
+      </clip>
+    </camera>
+    <plugin name="gazebo_ros_camera" filename="libgazebo_ros_camera.so">
+      <robotNamespace>/</robotNamespace>
+      <cameraName>camera</cameraName>
+      <imageTopicName>camera/image_raw</imageTopicName>
+      <cameraInfoTopicName>camera/camera_info</cameraInfoTopicName>
+      <frameName>camera_link</frameName>
+      <qos_camera>best_effort</qos_camera>
+    </plugin>
+  </sensor>
+</gazebo>
 
   <!-- Lidar -->
   <link name="lidar_link">
