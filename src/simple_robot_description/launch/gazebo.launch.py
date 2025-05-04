@@ -6,6 +6,7 @@ from launch.substitutions import Command
 import os
 
 def generate_launch_description():
+    # Определяем пути к файлам
     pkg_share = get_package_share_directory('simple_robot_description')
     xacro_path = os.path.join(pkg_share, 'urdf', 'simple_robot.xacro')
     world_path = os.path.join(pkg_share, 'worlds', 'room_with_obstacles.world')
@@ -17,7 +18,7 @@ def generate_launch_description():
             output='screen'
         ),
 
-        # Публикуем состояние робота
+        # Публикуем описание робота
         Node(
             package='robot_state_publisher',
             executable='robot_state_publisher',
@@ -33,18 +34,4 @@ def generate_launch_description():
             arguments=['-entity', 'simple_robot', '-topic', 'robot_description'],
             output='screen'
         ),
-
-        # Запускаем SLAM Toolbox
-        Node(
-            package='slam_toolbox',
-            executable='sync_slam_toolbox_node',
-            name='slam_toolbox',
-            output='screen',
-            parameters=[
-                {'use_sim_time': True}
-            ],
-            remappings=[
-                ('/scan', '/scan')  # Если твой лидар публикует в другой топик, поменяй здесь
-            ]
-        )
     ])

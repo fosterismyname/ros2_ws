@@ -1,0 +1,6 @@
+Invoking command in '/home/elisey/ros2_ws/build/simple_robot_description': /usr/bin/cmake /home/elisey/ros2_ws/src/simple_robot_description -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/elisey/ros2_ws/install/simple_robot_description
+Invoked command in '/home/elisey/ros2_ws/build/simple_robot_description' returned '0': /usr/bin/cmake /home/elisey/ros2_ws/src/simple_robot_description -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/elisey/ros2_ws/install/simple_robot_description
+Invoking command in '/home/elisey/ros2_ws/build/simple_robot_description': /usr/bin/cmake --build /home/elisey/ros2_ws/build/simple_robot_description -- -j12 -l12
+Invoked command in '/home/elisey/ros2_ws/build/simple_robot_description' returned '0': /usr/bin/cmake --build /home/elisey/ros2_ws/build/simple_robot_description -- -j12 -l12
+Invoking command in '/home/elisey/ros2_ws/build/simple_robot_description': /usr/bin/cmake --install /home/elisey/ros2_ws/build/simple_robot_description
+Invoked command in '/home/elisey/ros2_ws/build/simple_robot_description' returned '-2': /usr/bin/cmake --install /home/elisey/ros2_ws/build/simple_robot_description

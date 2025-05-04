@@ -1,0 +1,30 @@
+-- Found ament_cmake: 1.1.6 (/opt/ros/galactic/share/ament_cmake/cmake)
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Found xacro: 2.0.7 (/opt/ros/galactic/share/xacro/cmake)
+-- Found rclpy: 1.9.3 (/opt/ros/galactic/share/rclpy/cmake)
+-- Found geometry_msgs: 2.2.4 (/opt/ros/galactic/share/geometry_msgs/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Found rosidl_adapter: 2.2.3 (/opt/ros/galactic/share/rosidl_adapter/cmake)
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/elisey/ros2_ws/build/simple_robot_description
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /home/elisey/ros2_ws/install/simple_robot_description/share/simple_robot_description/urdf/simple_robot.xacro
+CMake Warning (dev) at ament_cmake_symlink_install/ament_cmake_symlink_install.cmake:62 (file):
+  Policy CMP0009 is not set: FILE GLOB_RECURSE calls should not follow
+  symlinks by default.  Run "cmake --help-policy CMP0009" for policy details.
+  Use the cmake_policy command to set the policy and suppress this warning.
+Call Stack (most recent call first):
+  ament_cmake_symlink_install/ament_cmake_symlink_install.cmake:317 (ament_cmake_symlink_install_directory)
+  cmake_install.cmake:41 (include)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Symlinking: /home/elisey/ros2_ws/install/simple_robot_description/share/simple_robot_description/launch/build/.built_by
+-- Symlinking: /home/elisey/ros2_ws/install/simple_robot_description/share/simple_robot_description/launch/build/COLCON_IGNORE
+-- Symlinking: /home/elisey/ros2_ws/install/simple_robot_description/share/simple_robot_description/launch/gazebo.launch.py
+-- Symlinking: /home/elisey/ros2_ws/install/simple_robot_description/share/simple_robot_description/launch/install/.colcon_install_layout
+-- Symlinking: /home/elisey/ros2_ws/install/simple_robot_description/share/simple_robot_description/launch/install/COLCON_IGNORE
+-- Symlinking: /home/elisey/ros2_ws/install/simple_robot_description/share/simple_robot_description/launch/install/_local_setup_util_ps1.py
